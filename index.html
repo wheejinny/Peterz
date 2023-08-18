@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/fonts.css" />
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/layout_responsive.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/main_responsive.css" />
+    <link rel="stylesheet" href="../../css/animation.css" />
+    <link rel="stylesheet" href="../../css/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../js/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../js/scroll-gsap.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="36x36" href="../../favicon/android-icon-36x36.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="../../favicon/android-icon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="72x72" href="../../favicon/android-icon-72x72.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/android-icon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="../../favicon/android-icon-144x144.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png" />
+    <link rel="manifest" href="../../favicon/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>MOBILECEN</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <ul class="skipMenu">
+        <li><a href="#gnb">메인 메뉴</a></li>
+        <li><a href="#mainContents">메인 컨텐츠</a></li>
+        <li><a href="#subContents">서브 컨텐츠</a></li>
+      </ul>
+      <header id="header" class="header">
+        <div class="auto">
+          <h1 class="logo">
+            <a href="javascript:scrollMoveTop();"><img src="../../images/logo.svg" alt="모바일센" /></a>
+          </h1>
+          <nav class="gnb" id="gnb">
+            <ul>
+              <li class="blind"><a href="/">MAIN</a></li>
+              <li><a href="javascript:gnbMoveScroll(1);">WHAT WE CAN</a></li>
+              <li><a href="javascript:gnbMoveScroll(2);">WHAT WE DO</a></li>
+              <li><a href="javascript:gnbMoveScroll(3);">OUR BUSINESS</a></li>
+              <li><a href="javascript:gnbMoveScroll(4);">CERTIFICATION</a></li>
+              <li><a href="javascript:gnbMoveScroll(5);">HISTORY</a></li>
+              <li><a href="javascript:gnbMoveScroll(6);">NEWS</a></li>
+              <li><a href="javascript:gnbMoveScroll(7);">LOCATION</a></li>
+            </ul>
+          </nav>
+          <a href="javascript:mobileGnb();" class="btnAllMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </header>
+      <main id="mainContents" class="mainContents">
+        <section id="mainVisual" class="section mainVisual">
+          <div class="bgBoxWrap"><div class="bgBox"></div></div>
+          <div class="auto">
+            <div class="txtBox">
+              <p class="txt01">WE ARE</p>
+              <p class="txt02">MOBILE <span>CENTRIC</span></p>
+              <p class="txt03">THE LEADING DIGITAL COMPANY</p>
+              <p class="txt04">
+                이동성을 가진 정보통신매체인 Mobile과 ‘중심의’라는 뜻과 힘이 세다는 뜻의 “쎈”이라는 뜻을 가진 Centric의 합성어로<br />
+                모바일센은 빠르게 움직이는 IT 산업의 흐름에 발맞춰 움직여 세상의 중심이 되자는 기업정신이 담겨있습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="section section01">
+          <div class="auto">
+            <div class="mainSectionTitle">
+              <p class="tit">WHAT WE CAN</p>
+            </div>
+            <div class="wecan">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>
+                      <span class="en"><img src="../../images/wecan-icon01.svg" alt="" />Mobile & Web</span>
+                      <span class="kr">모바일용 앱 & 웹 개발</span>
+                    </dt>
+                    <dd>사용자에게 적합한 환경의 다양한 앱 및 웹페이지 개발 서비스를 제공합니다.</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      <span class="en"><img src="../../images/wecan-icon02.svg" alt="" />Phython</span>
+                      <span class="kr">파이썬 활용 응용 기술</span>
+                    </dt>
+                    <dd>파이썬 및 여러가지 개발 소프트웨어를 활용하여 최상의 서비스를 제공합니다.</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      <span class="en"><img src="../../images/wecan-icon03.svg" alt="" />Web Consulting</span>
+                      <span class="kr">웹 접근성 관련 컨설팅</span>
+                    </dt>
+                    <dd>사용자에게 적합한 환경의 다양한 앱 및 웹페이지 개발 서비스를 제공합니다.</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      <span class="en"><img src="../../images/wecan-icon04.svg" alt="" />System Building</span>
+                      <span class="kr">표준 프레임워크 통합 및 구축</span>
+                    </dt>
+                    <dd>표준프레임워크 기반으로 개발을 수행하여 빠른 시스템 구축 및 시스템 관리가 가능합니다.</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      <span class="en"><img src="../../images/wecan-icon05.svg" alt="" />IT Service Improving</span>
+                      <span class="kr">IT 서비스 개선 및 유지보수</span>
+                    </dt>
+                    <dd>정보시스템을 구성하는 다양한 HW, SW의 서비스 수준을 유지하기 위해 사전 성능 유지 및 장애시 기술적 대응을 위한 통합서비스를 제공합니다.</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section section02">
+          <div class="mobileCenLetter mobileCenLetter01"><img src="../../images/mobilecen-M.png" alt="" /></div>
+          <div class="mobileCenLetter mobileCenLetter02"><img src="../../images/mobilecen-O.png" alt="" /></div>
+          <div class="auto">
+            <div class="mainSectionTitle">
+              <p class="tit">WHAT WE DO</p>
+              <p class="desc">
+                모바일센은 PC, Mobile 등 다양한 디지털 디바이스를 사업영역으로<br />
+                개발, 유지보수, 웹사이트 제작 등 넓은 스펙트럼으로 활동하고 있습니다.<br />
+                언제나 고객의 니즈를 우선으로 생각하는 최상의 파트너로서 자리매김하고 있습니다
+              </p>
+            </div>
+            <div class="contentsImg">
+              <div class="floating">
+                <img src="../../images/wedo-floating.png" alt="" />
+                <video muted autoplay loop>
+                  <source src="../../video/wedoVideo.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <!-- <img src="../../images/wedo-img01_05.gif" alt="" class="floating" loading="lazy" /> -->
+              <img src="../../images/wedo-img01_03.png" alt="" class="hand" />
+            </div>
+            <div class="wedo">
+              <ul>
+                <li>
+                  <div class="inner">
+                    <div class="txtBox">
+                      <dl>
+                        <dt>
+                          BLE기반<br />
+                          안심서비스 솔루션
+                        </dt>
+                        <dd><div class="inner">버스안심귀가서비스, NFC택시안심서비스, Standby-Care서비스등 BLE 및 NFC기반 네트웍 모바일 솔루션을 구축하여, 공공서비스 분야에서 다양한 서비스를 개발 제공하고 있습니다.</div></dd>
+                      </dl>
+                    </div>
+                    <div class="imgConBox">
+                      <div class="iconBox"></div>
+                      <div class="imgBox">
+                        <img src="../../images/wedo-img02.jpg" alt="" />
+                        <div class="img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <divc class="inner">
+                    <div class="txtBox">
+                      <dl>
+                        <dt>SYSTEM<br />INTERGRATION</dt>
+                        <dd>
+                          <divc class="inner">
+                            국가 공공기관의 업무 개선과 대국민 서비스 제고를 위하여 IT 인프라 구축 및 업무시스템 구축을 통해 최적의 IT 서비스를 제공하고 있습니다. 국가 공공기관의 소규모 홈페이지 부터 다양한 업무 기반의 시스템 까지 수요자 중심의 서비스 통합과 자원 통합을 위한 구축 모델과 표준 방안을
+                            제공합니다.
+                          </divc>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="imgConBox">
+                      <div class="iconBox"></div>
+                      <div class="imgBox">
+                        <img src="../../images/wedo-img03.jpg" alt="" />
+                        <div class="img"></div>
+                      </div>
+                    </div>
+                  </divc>
+                </li>
+                <li>
+                  <div class="inner">
+                    <div class="txtBox">
+                      <dl>
+                        <dt>WEB & MOBILE<br />DEVELOPMENT</dt>
+                        <dd><div class="inner">사용자와 운영자가 소통할 수 있는 시스템, 이용자 편의성과 운영 관리의 효율성을 극대화 할 수 있는 시스템 구축을 목표로 웹 접근성, 웹 표준 코딩, 반응형 웹을 구현한 개발을 제공 합니다.</div></dd>
+                      </dl>
+                    </div>
+                    <div class="imgConBox">
+                      <div class="iconBox"></div>
+                      <div class="imgBox">
+                        <img src="../../images/wedo-img04.jpg" alt="" />
+                        <div class="img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="inner">
+                    <div class="txtBox">
+                      <dl>
+                        <dt>IT<br />SOLUTION</dt>
+                        <dd><div class="inner">서버 이중화, 데이터베이스 동기화, DRBD (Distributed Replicated Block Device) 등 다양한 IT 기술지원 서비스를 제공하고 있습 니다.</div></dd>
+                      </dl>
+                    </div>
+                    <div class="imgConBox">
+                      <div class="iconBox"></div>
+                      <div class="imgBox">
+                        <img src="../../images/wedo-img05.jpg" alt="" />
+                        <div class="img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section section03">
+          <img src="../../images/mobilecen-B.png" alt="" class="mobileCenLetter" />
+          <div class="auto">
+            <div class="flex">
+              <div class="mask mask01">
+                <ul>
+                  <li>
+                    <img src="../../images/ourBusiness-img01-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img01-m.png" alt="" class="imgM" />
+                  </li>
+                  <li>
+                    <img src="../../images/ourBusiness-img02-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img02-m.png" alt="" class="imgM" />
+                  </li>
+                  <li>
+                    <img src="../../images/ourBusiness-img03-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img03-m.png" alt="" class="imgM" />
+                  </li>
+                  <li>
+                    <img src="../../images/ourBusiness-img04-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img04-m.png" alt="" class="imgM" />
+                  </li>
+                  <li>
+                    <img src="../../images/ourBusiness-img05-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img05-m.png" alt="" class="imgM" />
+                  </li>
+                  <li>
+                    <img src="../../images/ourBusiness-img06-pc.png" alt="" class="imgPC on" />
+                    <img src="../../images/ourBusiness-img06-m.png" alt="" class="imgM" />
+                  </li>
+                </ul>
+              </div>
+              <div class="mask mask02">
+                <div class="mainSectionTitle">
+                  <p class="tit">OUR BUSINESS</p>
+                </div>
+                <div class="slider">
+                  <ul>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">사이버가디언</p>
+                        <p class="desc">인터넷, 게임 사용시간 및 PC 사용시간을 제어해주며, 음란/유해 사이트 및 음란 동영상을 차단하여 컴퓨터 중독을 예방하고, 올바른 자녀의 PC 사용습관을 길러주는 PC제어 서비스 입니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">사이버안심존</p>
+                        <p class="desc">대내외 사용자 요구에 부합하는 맞춤형 서비스를 구현하고, 사용자 경험에 맞는 UX/UI 설계를 제공합니다. 공공기관, 정보통신 관련 포털사이트 등에 최적화되고 고도화된 사이트를 구현합니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">풋살매치</p>
+                        <p class="desc">‘풋살매치’는 기존의 풋살구장예약 어플들과 차별화된 서비스를 제공중이며 이와 추가적으로 ‘무인중계카메라’ 서비스를 추가 지원하고있습니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">KT Hotel</p>
+                        <p class="desc">kt estate에서 런칭한 SELECTIVE 페이지 입니다.다양한 스타일의 멀티 브랜드계열 호텔에서 이용 가능한 통합 멤버십 서비스가 제공됩니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">위뉴(Weknew)</p>
+                        <p class="desc">위뉴는 의학전문가들이 집단 지성을 통해 의학적 근거에 기반한 시뢰 할 수 있는 헬스케어 콘텐츠를 제공하는 서비스 입니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner">
+                        <div class="iconTab">
+                          <button class="iconPC on"></button>
+                          <button class="iconM"></button>
+                        </div>
+                        <p class="tit">국립암센터</p>
+                        <p class="desc">
+                          국가암데이터센터는 여러 기관에 분산된 다양한 종류의 암 데이터를 전주기별(예방, 검진, 치료, 사망 등)로 수집하고 연계하여 국가 단위의 암 데이터를 구축하고 있습니다. 또한 임상·유전체·영상·공공데이터 등 다양한 유형의 암 데이터를 공개하고 활용할 수 있도록 지원체계를 마련하고
+                          있습니다
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="arrows">
+                    <a href="" class="slickPrev"></a>
+                    <a href="" type="button" class="slickNext"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section04">
+          <img src="../../images/mobilecen-I.png" alt="" class="mobileCenLetter" />
+          <div class="auto">
+            <div class="mainSectionTitle">
+              <p class="tit">CERTIFICATION</p>
+              <p class="desc">지속적인 연구 및 기술 개발을 통해 취득한 모바일센의 기술과 인증서 입니다.</p>
+            </div>
+            <div class="certification">
+              <ul>
+                <li>
+                  <a href="">
+                    <div class="imgBox"><img src="../../images/certification-img03.jpg" alt="" /></div>
+                    <p>특허증</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="imgBox"><img src="../../images/certification-img01.jpg" alt="" /></div>
+                    <p>벤처기업확인서</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="imgBox"><img src="../../images/certification-img02.jpg" alt="" /></div>
+                    <p>이노비즈인증</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="imgBox"><img src="../../images/certification-img04.jpg" alt="" /></div>
+                    <p>GS인증 1등급</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="backLine"></div>
+        </section>
+        <section class="section section05">
+          <div class="auto">
+            <div class="history">
+              <div class="year">20</div>
+              <div class="historyYear">
+                <ul>
+                  <li><span>20</span>22</li>
+                  <li><span>20</span>21</li>
+                  <li><span>20</span>20</li>
+                  <li><span>20</span>19</li>
+                  <li><span>20</span>18</li>
+                  <li><span>20</span>17</li>
+                  <li><span>20</span>16</li>
+                </ul>
+                <!-- <a href="" class="arrow btnPrev"><img src="../../images/historyArrow-prev.svg" alt="" /></a>
+                <a href="" class="arrow btnNext"><img src="../../images/historyArrow-next.svg" alt="" /></a> -->
+              </div>
+              <div class="historyContents">
+                <div class="mainSectionTitle">
+                  <p class="tit">HISTORY</p>
+                  <p class="desc">모바일센은 계속해서 성장합니다.</p>
+                </div>
+                <ul>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>06월 ~ 12월</dt>
+                        <dd>
+                          <strong>국가암데이터 관리 기반 NCDC포털 구축</strong>
+                          국립암센터
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>04월 ~ 12월</dt>
+                        <dd>
+                          <strong>선탑재 앱 금지 행위 모니터링 용역 수주</strong>
+                          (사)한국메타버스산업협회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>03월 ~ 07월</dt>
+                        <dd>
+                          <strong>kt estate 호텔 멤버십 시스템 구축</strong>
+                          KT DS
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 04월</dt>
+                        <dd>
+                          <strong>Weknew 플랫폼 서비스 구축</strong>
+                          국립암센터
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 03월</dt>
+                        <dd>
+                          <strong>삼성전자 온라인 주주총회 플랫폼 구축</strong>
+                          (주)온오프링크
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2022년 앱 결제 피해예방시스템 운영 유지보수</strong>
+                          (사)한국메타버스산업협회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2022년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수</strong>
+                          (사)한국메타버스산업협회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>09월 ~ 12월</dt>
+                        <dd>
+                          <strong>서부발전 스마트모바일점검시스템 기술지원 수주</strong>
+                          동양정보서비스(주)
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>07월 ~ 12월</dt>
+                        <dd>
+                          <strong>선탑재 앱 금지 행위 모니터링 용역 수주</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>06월</dt>
+                        <dd><strong>중소기업유통센터 시범구매사업 선정</strong></dd>
+                      </dl>
+                      <dl>
+                        <dt>03월 ~ 12월</dt>
+                        <dd>
+                          <strong>모바일 앱 마켓 모니터링 용역 수주</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2021년 앱 결제 피해예방 시스템 운영 유지보수</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2021년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수 용역 수행</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>08월</dt>
+                        <dd>
+                          <strong>암빅데이터/암모니터 웹사이트 구축 수주</strong>
+                          국립암센터
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>07월</dt>
+                        <dd>
+                          <strong>INNOBIZ(혁신형중소기업) 인증 획득</strong>
+                          중소벤처기업부
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>06월</dt>
+                        <dd>
+                          <strong>PC용 청소년 안심서비스 S/W 사이버가디언(cyberGuardian)</strong>
+                          GS인증 1등급 획득
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>05월</dt>
+                        <dd>
+                          <strong>무인 스포츠 중계 서비스</strong>
+                          특허획득
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>03월</dt>
+                        <dd>
+                          <strong>기업부설연구소 설립</strong>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>03월 ~ 12월</dt>
+                        <dd>
+                          <strong>모바일 앱 마켓 모니터링 용역 수주</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>서울시 정신건강 통계 홈페이지 유지보수</strong>
+                          서울시정신건강복지센터
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>202년 앱 결제 피해예방 시스템 운영 유지보수</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2020년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수 용역 수행</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>05월 ~ 12월</dt>
+                        <dd>
+                          <strong>서울시 정신건강통계 홈페이지 리뉴얼</strong>
+                          서울시정신건강복지센터
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2019년 앱 결제 피해예방시스템 운영 유지보수</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2019년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수 용역 수행</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>06월 ~ 12월</dt>
+                        <dd>
+                          <strong>인터넷 이용환경 개선 지원 위탁 용역</strong>
+                          한국인터넷진흥원
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>04월 ~ 08월</dt>
+                        <dd>
+                          <strong>무설치 방식의 대안 서비스 도출</strong>
+                          한국인터넷진흥원
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>02월</dt>
+                        <dd>
+                          <strong>벤처기업 인증 획득</strong>
+                          기술보증기금
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>비콘기반 마을버스안심서비스 개발 운영</strong>
+                          서대문구
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2018년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수 용역 수행</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>06월 ~ 12월</dt>
+                        <dd>
+                          <strong>국가도메인 해외 현황 조사 및 안정성 강화 방안 도출</strong>
+                          KISA
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>06월 ~ 12월</dt>
+                        <dd>
+                          <strong>인터넷 이용 환경 개선 기반 위탁용역 수행</strong>
+                          KISA
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>비콘기반 마을버스안심서비스 개발 운영</strong>
+                          서대문구 선정
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2017년 클린스마트모바일환경조성사업 시스템 운영 및 유지보수 용역 수행</strong>
+                          (사)한국모바일산업연합회
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex">
+                      <dl>
+                        <dt>01월 ~ 12월</dt>
+                        <dd>
+                          <strong>2016년 클린스마트모바일환경조성사업 운영 및 유지보수 영역 수행</strong>
+                          한국무선인터넷산업연합회
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt>10월</dt>
+                        <dd><strong>'엔에프씨글로벌' 포괄적 사업권 양수 계약 체결</strong></dd>
+                      </dl>
+                      <dl>
+                        <dt>01월</dt>
+                        <dd><strong>'surf' 서비스 시스템 개발 및 유지보수 용역 수행</strong></dd>
+                      </dl>
+                      <dl>
+                        <dt>01월</dt>
+                        <dd><strong>회사설립</strong></dd>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section06">
+          <img src="../../images/mobilecen-E.svg" alt="" class="mobileCenLetter" />
+          <div class="bgBoxWrap">
+            <div class="bgBox pc"></div>
+            <div class="bgBox mobile"></div>
+          </div>
+          <div class="backLine"></div>
+          <div class="auto">
+            <div class="mainSectionTitle">
+              <p class="tit">NEWS</p>
+              <p class="desc">모바일센의 새로운 소식을 받아보세요.</p>
+            </div>
+            <div class="noticeCard">
+              <ul>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li class="basic">
+                  <a href="javascript:;"> </a>
+                </li>
+                <li class="basic">
+                  <a href="javascript:;"> </a>
+                </li>
+              </ul>
+              <a href="javascript:noticeAll();" class="more">+ MORE</a>
+            </div>
+          </div>
+        </section>
+        <section class="section section07">
+          <div class="bgBoxWrap">
+            <div class="bgBox pc"></div>
+            <div class="bgBox mobile"></div>
+          </div>
+          <div class="auto">
+            <div class="mainSectionTitle">
+              <p class="tit">LOCATION</p>
+              <p class="desc">모바일센의 위치와 정보를 확인해보세요.</p>
+            </div>
+            <div class="locationInfo">
+              <dl>
+                <dt>ADDRESS</dt>
+                <dd>서울시 영등포구 선유로9길 10, 문래SKV1 센터 609호</dd>
+              </dl>
+              <dl>
+                <dt>TEL</dt>
+                <dd>02-782-0606</dd>
+              </dl>
+              <dl>
+                <dt>E-mail</dt>
+                <dd>mcen@mobilecen.co.kr</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <img src="../../images/mobilecen-cen.png" alt="" class="mobileCenLetter" />
+        <div class="auto">
+          <div class="footerLogo">
+            <a href="/"><img src="../../images/logo.svg" alt="모바일센" /></a>
+          </div>
+          <div class="footerContentsWrap">
+            <div class="footerMenu">
+              <a href="javascript:popup(1, 0);">개인정보처리방침</a>
+              <a href="javascript:popup(2, 0);">이메일무단수집거부</a>
+            </div>
+            <div class="footerContents">
+              <dl>
+                <dt>COMPANY INFO</dt>
+                <dd>
+                  <address>주소 : 서울특별시 영등포구 선유로 9길 10, 문래skv1센터 609호</address>
+                  <p>대표이사 : 황인수</p>
+                  <p>사업자등록번호 : 863-86-00346</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>CONTACT US</dt>
+                <dd>
+                  <p>TEL : 02-782-0606</p>
+                  <p>FAX : 070-5227-5225</p>
+                  <p>E-mail : mcen@mobilecen.co.kr</p>
+                </dd>
+              </dl>
+            </div>
+            <p class="copyright">Copyright ⓒ 2022 MOBILE CENTRIC. All Right Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <aside class="quickMenu">
+        <ul>
+          <li>
+            <a href="https://www.cyberguardian.co.kr/" target="_blank" class="banner banner01">
+              <img src="../../images/quickBanner01.svg" alt="사이버가디언" class="pc" />
+              <img src="../../images/quickBanner01-m.svg" alt="사이버가디언" class="m" />
+              <div class="hvBox">
+                <img src="../../images/quickBanner01-pc.svg" alt="사이버가디언" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:alertPopup('서비스준비중입니다');" class="banner banner01">
+              <img src="../../images/quickBanner02.svg" alt="풋살매치" class="pc" />
+              <img src="../../images/quickBanner02-m.svg" alt="풋살매치" class="m" />
+              <div class="hvBox">
+                <img src="../../images/quickBanner02-pc.svg" alt="풋살매치" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" class="btnInquiry">
+              <img src="../../images/icon-chat.svg" alt="" />
+              <span>문의하기</span>
+            </a>
+          </li>
+        </ul>
+        <button class="btnTop" onClick="scrollMoveTop()">
+          <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 10L10 1L18.5 10" stroke="#00A5B9" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+          </svg>
+          TOP
+        </button>
+      </aside>
+      <aside class="mobileGnb">
+        <button onClick="mobileGnbClose();" class="btnClose"><img src="../../images/icon-close.svg" alt="" /></button>
+        <div class="gnbAll">
+          <ul>
+            <li class="blind"><a href="/">MAIN</a></li>
+            <li><a href="javascript:gnbMoveScroll(1);">WHAT WE CAN</a></li>
+            <li><a href="javascript:gnbMoveScroll(2);">WHAT WE DO</a></li>
+            <li><a href="javascript:gnbMoveScroll(3);">OUR BUSINESS</a></li>
+            <li><a href="javascript:gnbMoveScroll(4);">CERTIFICATION</a></li>
+            <li><a href="javascript:gnbMoveScroll(5);">HISTORY</a></li>
+            <li><a href="javascript:gnbMoveScroll(6);">NEWS</a></li>
+            <li><a href="javascript:gnbMoveScroll(7);">LOCATION</a></li>
+          </ul>
+        </div>
+        <div class="onlyTablet">
+          <ul>
+            <li class="blind"><a href="/">MAIN</a></li>
+            <li><a href="javascript:gnbMoveScroll(1);">WHAT WE CAN</a></li>
+            <li><a href="javascript:gnbMoveScroll(2);">WHAT WE DO</a></li>
+            <li><a href="javascript:gnbMoveScroll(3);">OUR BUSINESS</a></li>
+            <li><a href="javascript:gnbMoveScroll(4);">CERTIFICATION</a></li>
+          </ul>
+          <ul>
+            <li><a href="javascript:gnbMoveScroll(5);">HISTORY</a></li>
+            <li><a href="javascript:gnbMoveScroll(6);">NEWS</a></li>
+            <li><a href="javascript:gnbMoveScroll(7);">LOCATION</a></li>
+          </ul>
+        </div>
+        <div class="quickBanner">
+          <a href=""><img src="../../images/quickBanner01-pc.svg" alt="" /></a>
+          <a href=""><img src="../../images/quickBanner02-pc.svg" alt="" /></a>
+        </div>
+      </aside>
+      <div class="noticeList">
+        <div class="innerWrap">
+          <div class="inner">
+            <div class="noticeCard">
+              <ul>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:noticeDetail();">
+                    <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+                    <p class="desc">국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행중국가암데이</p>
+                    <p class="date">2022.10.30</p>
+                    <span class="more"></span>
+                  </a>
+                </li>
+              </ul>
+              <div class="more">+ MORE</div>
+            </div>
+            <div class="bottomBtns">
+              <div class="flex">
+                <button class="btn btnMore">MORE <img src="../../images/icon-plus.svg" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onClick="noticeAllClose()" class="btnClose"><img src="../../images/icon-close.svg" alt="" /></button>
+      </div>
+      <div class="noticeDetail">
+        <div class="innerWrap">
+          <div class="inner">
+            <div class="titleWrap">
+              <p class="tit">국가암데이터 센터 반응형 웹 개발 진행중</p>
+              <p class="date">2022.10.30</p>
+              <div class="line"></div>
+            </div>
+            <div class="contentBox">
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행 국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행
+              <br />
+              <br />
+              <br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행
+              <br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행<br />
+              국가암데이터 센터 반응형 웹 개발 진행중국가암데이터 센터 반응형 웹 개발 진행
+            </div>
+            <div class="bottomBtns">
+              <div class="flex">
+                <button onClick="noticeDetailClose();" class="btn btnPrimary">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup inquiry">
+        <div class="innerWrap">
+          <div class="inner">
+            <p class="tit">문의하기</p>
+            <p class="desc">궁금한 사항을 문의주시면 빠르고 신속하게 답변해 드리겠습니다.</p>
+            <div class="inquiryWrap">
+              <div class="inquiryForm">
+                <div class="flex">
+                  <div class="inputText">
+                    <input type="text" id="" name="" placeholder="Name" />
+                  </div>
+                  <div class="inputText">
+                    <input type="text" id="" name="" placeholder="Company" />
+                  </div>
+                  <div class="inputText">
+                    <input type="text" id="" name="" placeholder="E-mail" />
+                  </div>
+                  <div class="inputText">
+                    <input type="text" id="" name="" placeholder="Number" />
+                  </div>
+                </div>
+                <dl>
+                  <dt>Message</dt>
+                  <dd>
+                    <textarea name="" id=""></textarea>
+                  </dd>
+                </dl>
+                <div class="agreeBox">
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree" />
+                    <label for="agree">개인정보처리방침에 동의 <a href="javascript:popup(1,1);">[자세히보기]</a></label>
+                  </div>
+                </div>
+              </div>
+              <div class="bottomBtns">
+                <div class="flex">
+                  <button onClick="inquiry()" class="btn btnPrimary">전송하기</button>
+                </div>
+              </div>
+            </div>
+            <button class="btnClose"><img src="../../images/icon-close.svg" alt="" /></button>
+          </div>
+        </div>
+      </div>
+      <div class="popup terms privacy">
+        <div class="innerWrap">
+          <div class="inner">
+            <p class="tit">개인정보처리방침</p>
+            <div class="termsBox">
+              <div class="scrollBox">
+                개인정보취급방침<br />
+                <br />
+                '모바일센'은 대한민국 헌법에 보장된 사생활의 비밀과 통신의 비밀 보장을 위해 '정보통신망 이용촉진 등에 관한 법률'상의 개인정보 보호규정 및 정보통신부가 제정한 '개인정보 보호지침'을 준수하고 있습니다. 그러나 일부 부도덕한 사람들의 불법행위로 인해 발생할지도 모를 개인 프라이버시에 대한
+                위협을 막고, 회원의 개인정보를 적극적으로 보호하기 위해 다음과 같은 개인정보 보호 정책을 적용하고 있습니다.<br />
+                <br />
+                개인정보 수집<br />
+                1-1. 개인정보의 수집목적 및 이용<br />
+                '모바일센'은 상담 신청 및 문의에 대한 담당자 확인 및 원활한 답변 회신을 드리기 위해 개인정보를 수집합니다. 이러한 목적으로 수집된 개인정보는 구매계약에 따른 빠르고 정확한 진행과 전체적인 통계자료 등에 이용되어 상담 신청자의 기호에 맞는 질 높은 서비스를 제공하게 됩니다.<br />
+                <br />
+                1-2. 개인정보의 수집범위<br />
+                '모바일센은' 서비스 계약의 성립 및 이행에 필요한 최소한의 개인정보만을 수집하며, 기타 종교, 출신지, 범죄기록, 건강상태, 성생활 등 이용자의 기본적 인권을 현저하게 침해할 우려가 있는 개인정보는 이용자의 동의가 없는 한 수집하지 않습니다.<br />
+                <br />
+                1-3. 개인정보 항목 및 수집 방법<br />
+                일반 이용자의 경우 대부분의 서비스를 개인정보 노출 없이도 사용하실 수 있습니다. 다만, 상담 신청을 하시게 될 경우에는 신분 확인에 필요한 성명, 회사명, 전화번호, e-mail 주소를 받게 됩니다. '모바일센'은 상담 신청 이외의 다른 어떤 목적으로도 회원의 개인정보를 사용하지 않습니다.<br />
+                <br />
+                1-4. 개인정보의 위탁처리<br />
+                '모바일센'이 개인정보 처리를 외부에 위탁하는 경우, 이용자의 동의를 받습니다. 그럴 때에도 위탁계약 등을 통해 서비스 제공자의 개인정보보호 관련 지시엄수, 개인정보에 관한 비밀유지, 제3자 제공의 금지 및 사고 시의 책임부담 등을 명확히 규정하고 계약 내용을 기록으로 보존합니다.<br />
+                <br />
+                2. 개인정보 보호관리<br />
+                2-1. 모바일센의 개인정보 관리자<br />
+                담당자 : 맹정희<br />
+                전화번호 : 070-5227-5218<br />
+                이메일 : mcen@mobilecen.co.kr<br />
+                '모바일센'은 이용자의 개인정보를 취급을 최소의 인원으로 제한하고 있습니다.<br />
+                <br />
+                2-2. 개인정보를 제3자에게 제공하는 경우<br />
+                '모바일센'은 이용자의 개인정보를 허락 없이 이용하거나 제3자에게 제공하지 않습니다. 다만, 다음 의 경우에는 예외로 합니다.<br />
+                ① 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신사업법, 지방세법, 소비자보호법, 한국은행법, 형사소송법 및 기타 관계법령 등에 특별한 규정이 있는 경우 (이 경우에도 이용자에게 개별적으로 통지하여 동의를 받으며, 각 이용자는 고지 또는 명시한 범위를
+                초과하여 이용하거나 제3자에게 제공하는 것을 거절할 수 있습니다.)<br />
+                ② 서비스 제공에 따른 요금 정산을 위하여 필요한 경우<br />
+                ③ 통계 작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우<br />
+                ④ 업무상 제휴를 한 제휴 파트너나 부가 서비스로 정보를 제공하는 정보자에게 이용자의 동의를 얻을 경우<br />
+                ⑤ 이용 약관을 위배한 사람이나 의도적이든 그렇지 않든 사람들에게 피해를 줄 수 있는 자를 식별하거나 연락을 취해야 할 경우<br />
+                ⑥ 기타 서비스의 질적 향상을 위해 이용자의 허락을 받을 경우<br />
+                <br />
+                2-3. 개인정보의 보유기간 및 이용기간<br />
+                '모바일센'이 보유하는 이용자의 개인정보는 이용자가 '문의하기'를 신청한 때부터 해당 문의가 완료될 때까지입니다. 이용 기간은 보유기간과 동일하지만, 수집 목적이 달성된 때에는 그전이라도 개인정보를 파기합니다. 이는 모바일센으로부터 적법하게 제공받은 제3자에 대해서도 마찬가지입니다. 다만,
+                다음의 경우는 예외로 합니다.<br />
+                ① 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우<br />
+                ② 보유기간을 이용자에게 미리 알리고 그 보유기간이 지나지 않은 경우<br />
+                ③ 개별적으로 이용자의 동의를 받은 경우<br />
+                <br />
+                2-4. 관리대책<br />
+                '모바일센'은 이용자의 개인정보를 보호하기 위하여 관련 직원에게 필요한 교육을 실시하고 있으며, 개인정보를 처리하는 시스템의 사용자를 지정하여 직무상 알게 된 개인정보를 타인에게 누설하거나 제공하지 않습니다. 또한, 본 정책에 명시된 이행사항 및 관련 직원의 준수 여부를 감사하기 위하여
+                적절한 절차를 마련하여 운영하고 있으며 감사 결과 운영상의 시정 또는 개선을 요구하는 사항이나 위반내용이 있는 경우 이를 시정 또는 개선하고 기타 필요한 조치를 취하도록 최선을 다하고 있습니다.<br />
+                <br />
+                3. 이용자관리<br />
+                3-1. 개인정보<br />
+                동의철회 이용자는 자신의 개인정보수집에 동의한 후, 나중에라도 철회하실 경우 '개인정보 관리자'에게 연락하여 동의를 철회 하실 수 있습니다. 그럴 경우 '모바일센'은 본인 여부를 확인한 후 원하는 조치를 해드립니다.<br />
+                <br />
+                3-2. 불만처리<br />
+                '모바일센'의 서비스 이용과 관련해 개인정보 등에 대한 이용자 불만은 언제든 친절히 해결해 드립니다. 불만에 대한 내용은 다음 메일 주소로 보내주시기 바랍니다. 회원 불만 접수 인터넷 메일 주소 : mcen@mobilecen.co.kr<br />
+                <br />
+                3-3. 분쟁조정<br />
+                '모바일센'의 이용자는 개인정보에 관한 분쟁이 있는 경우 신속하고 효과적인 분쟁 해결을 위하여 '개인정보분쟁조정위원회'에 그 처리를 의뢰할 수 있습니다.<br />
+                <br />
+                - 개인정보침해신고센터 URL: https://privacy.kisa.or.kr/main.do<br />
+                - 개인정보침해신고센터 전화: 118<br />
+                <br />
+                <br />
+                본 개인정보 보호 정책은 정부의 관련법률 및 지침의 변경과의 정책 변화에 따라 수시로 변경될 수 있습니다.<br />
+                변경된 사항은 정기적으로 방문하셔서 내용을 확인해 주십시오. 만약 변경사항에 의문이 있으실 때엔 언제든 개인정보관리자에게 문의해 주십시오.
+              </div>
+            </div>
+            <div class="bottomBtns">
+              <div class="flex">
+                <button onClick="popupClose()" class="btn btnPrimary w100 btnClose">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup terms email">
+        <div class="innerWrap">
+          <div class="inner">
+            <p class="tit">이메일무단수집거부</p>
+            <div class="termsBox">
+              <div class="scrollBox">
+                본 웹사이트에 게시된 이메일 주소가 전자우편 수집프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사처벌됨을 유념하시기 바랍니다. 또한, 전자우편 수집프로그램이나 기술적 장치가 아닌 사람에 의한 수동 이메일 수집도
+                거부합니다.<br />
+                <br />
+                ▣ 정보통신망이용촉진 및 정보보호등에 관한 법률[일부개정 2008. 2. 29 법률제 8867호]<br />
+                <br />
+                제 50조의 2 (전자우편주소의 무단 수집행위 등 금지)<br />
+                1. 누구든지 전자우편주소의 수집을 거부하는 의사가 명시된 인터넷 홈페이지에서 자동으로 전자우편주소를 수집 하는 프로그램 그 밖의 기술적 장치를 이용하여 전자우편주소를 수집 하여서는 아니된다.<br />
+                2. 누구든지 제1항의 규정을 위반하여 수집된 전자우편주소를 판매 유통하여서는 아니된다.<br />
+                3. 누구든지 제1항 및 제2항의 규정에 의하여 수집 판매 및 유통이 금지된 전자우편주소임을 알고 이를 정보전송 에 이용하여서는 아니된다.<br />
+                <br />
+                제74조(벌칙)<br />
+                ① 다음 각호의 1에 해당하는 자는 1년이하의 징역 또는 1천만원 이하의 벌금에 처한다<br />
+                <br />
+                &#60;개정2005.12.30, 2007.1.26, 2007.12.21&#62;<br />
+                1. 제8조제4항의 규정을 위반하여 표시·판매 또는 판매할 목적으로 진열한 자<br />
+                2. 제44조의7제1항제1호의 규정을 위반하여 음란한 부호·문언·음향·화상 또는 영상을 배포·판매·임대하거나 공연히 전시한 자<br />
+                3. 제44조의7제1항제3호의 규정을 위반하여 공포심이나 불안감을 유발하는 부호·문언·음향·화상 또는 영상을 반복 적으로 상대방에게 도달하게 한 자<br />
+                4. 제50조제6항의 규정을 위반하여 기술적 조치를 한 자<br />
+                5. 제50조의2의 규정을 위반하여 전자우편 주소를 수집·판매·유통 또는 정보전송에 이용한 자<br />
+                6. 제50조의8의 규정을 위반하여 광고성 정보를 전송한 자<br />
+                7. 제53조제4항을 위반하여 등록사항의 변경등록 또는 사업의 양도·양수 또는 합병·상속의 신고를 하지 아니한 자<br />
+                ② 제1항제3호의 죄는 피해자의 명시한 의사에 반하여 공소를 제기할 수 없다.<br />
+                <br />
+                [제65조에서 이동 &#60;2007.12.21&#62;]
+              </div>
+            </div>
+            <div class="bottomBtns">
+              <div class="flex">
+                <button onClick="popupClose()" class="btn btnPrimary w100 btnClose">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alertPopup">
+        <p class="txt"></p>
+        <div class="bottomBtns">
+          <div class="flex">
+            <button onClick="alertPopupClose()" class="btn btnPrimary">확인</button>
+          </div>
+        </div>
+      </div>
+      <div class="certificationPopup">
+        <div class="innerWrap">
+          <div class="inner">
+            <div class="btnArea">
+              <button class="btnClose"><img src="../../images/icon-close.svg" alt="" /></button>
+            </div>
+            <div class="imgBox">
+              <img src="../../images/certification-img01.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover"></div>
+    </div>
+    <script>
+      let coverState = false;
+      let noticeListState = false;
+      function cover() {
+        if (coverState == true) {
+          $(".cover").fadeOut("fast");
+          $("html,body").css({ overflow: "visible" });
+          ScrollTrigger.normalizeScroll(true);
+          coverState = false;
+        } else {
+          $(".cover").fadeIn("fast");
+          $("html,body").css({ overflow: "hidden" });
+          ScrollTrigger.normalizeScroll(false);
+          coverState = true;
+        }
+      }
+      function noticeAll() {
+        $(".noticeList").fadeIn("fast");
+        noticeListState = true;
+        cover();
+      }
+      $(".noticeList .noticeCard ul li").slice(0, 10).show();
+      $(".noticeList .btnMore").on("click", function () {
+        $(".noticeList .noticeCard li:hidden").slice(0, 5).show();
+        if ($(".noticeList .noticeCard li:hidden").length == 0) {
+          $(this).hide();
+        }
+      });
+      function noticeAllClose() {
+        $(".noticeList").fadeOut("fast");
+        noticeListState = false;
+        $(".noticeList .noticeCard ul li").hide();
+        $(".noticeList .noticeCard ul li").slice(0, 10).show();
+        $(".noticeList .btnMore").show();
+        cover();
+      }
+      function noticeDetail() {
+        $(".noticeDetail").fadeIn("fast");
+        if (noticeListState == false) {
+          cover();
+        }
+      }
+      function noticeDetailClose() {
+        $(".noticeDetail").fadeOut("fast");
+        if (noticeListState == false) {
+          cover();
+        }
+      }
+    </script>
+  </body>
+</html>
